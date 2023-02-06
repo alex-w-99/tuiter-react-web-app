@@ -1,0 +1,17 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body {
+    background-color: rgb(24,24,24);
+    color: white;
+    width: 600px;
+    margin: auto;
+}
+.wd-grid-row { clear: both; }
+.wd-margin-left { margin-left: 16px; }
+.wd-border-color {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(47,51,54);
+}

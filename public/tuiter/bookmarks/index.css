@@ -1,0 +1,80 @@
+.wd-top-border { /* used to put horizontal line between content blocks */
+    border-color: rgb(47,51,54);
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+}
+.wd-title-text {  /* e.g., "Bookmarks" */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+.wd-light-grey-font {
+    color: rgb(110,118,125);
+}
+.wd-light-text { /* e.g., "@WebDev" */
+    font-size: 13px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+}
+.wd-light-text-post {  /* e.g., "@robert_zubrin" */
+    color: rgb(110,118,125);
+    font-size: 15px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+.wd-light-text-post-author {  /* e.g., "Robert Zubrin" */
+    color: white;
+    font-weight: bold;
+    display: inline;
+}
+.wd-BCD-left { /* left-hand side of type B/C/D block; an image */
+    float: left;
+}
+.wd-BCD-right { /* right-hand side of type B/C/D block; 2 rows of text */
+    float: right;
+}
+.wd-padding-left { /* used to push text to the right of the pfp */
+    padding-left: 85px;
+}
+.wd-img-pfp { /* formats a circular profile image slight top/bottom margins */
+    border-radius: 50%;
+    width: 48px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+.wd-post-link-image-preview {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 12px;
+    height: 264px;
+    width: 504px
+}
+.wd-post-link-border {
+    border-color: rgb(47, 51, 54);
+    border-width: 1px;
+    border-style: solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -4px;
+    margin-right: 10px;
+}
+.wd-small-upper-margin { /* used to separate link preview text from link image preview */
+    margin-top: 10px;
+}
+.wd-post-options-menu {
+    margin-bottom: 10px;
+}
+.wd-post-option {
+    color: rgb(110,118,125);
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0;
+    margin-top: 12px;
+    margin-left: 70px;
+}
+.wd-post-option-selected {
+    color: rgb(255,0,0);
+}

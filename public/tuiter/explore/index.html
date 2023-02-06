@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore</title>
+    <link href="../styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div class="wd-border-color">
+        <div class="wd-grid-row wd-searchbar wd-margin-left"> <!-- search Tuiter -->
+            <input id="search-tuiter" placeholder="Search Tuiter"/>
+        </div>
+
+        <div class="wd-settings"> <!-- Explore settings -->
+            <a href="explore-settings.html">
+                <img width=17px height=17px alt="settings" class="wd-A-padded-right"
+                     src="data:image/png;base64,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"/>
+                     <!-- src="https://www.clipartmax.com/png/middle/108-1089717_twitter-gear-settings-icon-png.png"/> -->
+            </a>
+        </div>
+
+        <div class="wd-grid-row wd-margin-left"> <!-- tabs -->
+            <div class="wd-tab wd-selected-tab">
+                <a href="#">For you</a>
+            </div>
+            <div class="wd-tab">
+                <a href="#">Trending</a>
+            </div>
+            <div class="wd-tab">
+                <a href="#">COVID-19</a>
+            </div>
+            <div class="wd-tab">
+                <a href="#">News</a>
+            </div>
+            <div class="wd-tab">
+                <a href="#">Sports</a>
+            </div>
+            <div class="wd-tab">
+                <a href="#">Entertainment</a>
+            </div>
+        </div>
+
+        <div class="wd-grid-row wd-top-border"> <!-- first type "C" block -->
+            <div class="wd-margin-left"> <!-- need to establish top border before using margin -->
+                <div class="wd-wireframe-minor">
+                    Talk shows | Trending
+                </div>
+                <div class="wd-wireframe-main">
+                    60 Minutes
+                </div>
+                <div class="wd-wireframe-minor">
+                    10k Tuits
+                </div>
+            </div>
+        </div>
+
+        <div class="wd-grid-row wd-top-border"> <!-- second type "C" block -->
+            <div class="wd-margin-left"> <!-- need to establish top border before using margin -->
+                <div class="wd-wireframe-minor">
+                    Trending in Basketball
+                </div>
+                <div class="wd-wireframe-main">
+                    Kevin Durant
+                </div>
+                <div class="wd-wireframe-minor">
+                    16.7k Tuits
+                </div>
+            </div>
+        </div>
+
+        <div class="wd-grid-row wd-top-border"> <!-- first type "D" block -->
+            <div class="wd-margin-left"> <!-- need to establish top border before using margin -->
+                <div class="wd-DE-left">
+                    <div class="wd-wireframe-minor">
+                        <div class="wd-wireframe-minor-author">The New York Times</div> | Yesterday
+                    </div>
+                    <div class="wd-wireframe-main">
+                        How Is Shopping Around for Judges Actually a Thing?
+                    </div>
+                </div>
+                <div class="wd-DE-right">
+                    <img class="wd-image" alt="wd-image" src="https://i.pinimg.com/originals/97/7a/31/977a31b32c998dda750cea2db6a7ebf7.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="wd-grid-row wd-top-border"> <!-- first type "E" block -->
+            <div class="wd-margin-left"> <!-- need to establish top border before using margin -->
+                <div class="wd-DE-left">
+                    <div class="wd-wireframe-minor">
+                        Awards | LIVE
+                    </div>
+                    <div class="wd-wireframe-main">
+                        The 65th Annual Grammy Awards 2023
+                    </div>
+                </div>
+                <div class="wd-DE-right">
+                    <img class="wd-image" alt="wd-image" src="https://townsquare.media/site/838/files/2022/11/attachment-grammys.jpeg?w=980&q=75">
+                </div>
+            </div>
+        </div>
+
+        <div class="wd-grid-row wd-top-border"> <!-- first type "D" block -->
+            <div class="wd-margin-left"> <!-- need to establish top border before using margin -->
+                <div class="wd-DE-left">
+                    <div class="wd-wireframe-minor">
+                        <div class="wd-wireframe-minor-author">The Wall Street Journal</div> | Today
+                    </div>
+                    <div class="wd-wireframe-main">
+                        Investors on Edge After Jobs Data
+                    </div>
+                </div>
+                <div class="wd-DE-right">
+                    <img class="wd-image" alt="wd-image" src="data:image/png;base64,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">
+                </div>
+            </div>
+        </div>
+
+        <div class="wd-grid-row wd-top-border"> <!-- third type "C" block -->
+            <div class="wd-margin-left"> <!-- need to establish top border before using margin -->
+                <div class="wd-wireframe-minor">
+                    Trending
+                </div>
+                <div class="wd-wireframe-main">
+                    Russia and Belarus
+                </div>
+                <div class="wd-wireframe-minor">
+                    7,068 Tuits
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
