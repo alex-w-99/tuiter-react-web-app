@@ -1,0 +1,87 @@
+/* GENERAL */
+.wd-blank-anchor { /* overriding default anchor formatting */
+    color: inherit !important;
+    text-decoration: inherit !important;
+}
+.wd-blue-anchor { /* only keeping blue formatting of anchor */
+    color: cornflowerblue !important;
+    text-decoration: inherit !important;
+}
+
+/* FOR COLUMN 1: LEFT SIDEBAR */
+.wd-left-sidebar-more-height { /* sets height of left sidebar option "More" to 45px  */
+    height: 45px;
+}
+.wd-left-sidebar-more-icon-shift-leftwards { /* shifts "More" button 10px left */
+    position: relative;
+    left: -10px;
+}
+.wd-left-sidebar-more-icon-shift-leftwards-challenge { /* shifts "More" button left (challenge) */
+    position: relative;
+    left: -12px;
+    top: -4px;
+}
+.wd-left-sidebar-more-text-shift-leftwards { /* shifts "More" text 10px left */
+    position: relative;
+    left: -20px;
+}
+
+/* FOR COLUMN 2: MAIN CONTENT */
+.wd-search-magnifying-glass { /* aligns magnifying glass with search bar */
+    position: absolute;
+    top: 11px;
+    left: 30px;
+}
+.wd-search-settings-gear { /* aligns settings gear next to search bar */
+    position: absolute;
+    top: 7px;
+}
+.wd-main-content-image-minor-caption { /* formats minor caption text for main content's image */
+    font-size: 12px;
+    color: white;
+    bottom: 40px;
+    left: 17px;
+}
+.wd-main-content-image-caption { /* formats caption text for main content's main image */
+    color: white;
+    bottom: 3px;
+    left: 17px;
+}
+.wd-main-content-subtext { /* formats subtext of trending stories */
+    color: grey;
+    font-size: 13px;
+}
+
+/* BOOTSTRAP OVERRIDES */
+.list-group .override-bs-center { /* for center content list-group */
+    border-bottom: none;
+}
+.list-group .override-bs-left { /* for left sidebar list-group */
+    border: none;
+    font-size: 18px;
+}
+.list-group .override-bs-right { /* for right sidebar list-group */
+    border: none;
+    background-color: rgb(240,240,245);
+}
+.list-group-item.active {
+    --bs-list-group-active-bg: white;
+    --bs-list-group-active-color: black;
+    font-weight: bold;
+}
+.form-control { /* for search bar */
+    background-color: rgb(240,240,245) !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    margin-left: 10px !important;
+    border-color: white !important;
+}
+.nav {
+    --bs-nav-link-color: darkgrey !important;
+}
+.nav-tabs {
+    --bs-nav-tabs-border-width: 3px !important;
+    --bs-nav-tabs-border-radius: 0rem !important;
+    --bs-nav-tabs-border-color: white white white white !important;
+    --bs-nav-tabs-link-active-border-color: white white cornflowerblue white !important;
+}

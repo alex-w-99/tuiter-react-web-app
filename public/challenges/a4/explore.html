@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A4 Challenge Explore</title>
+    <link href="explore.css" rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <div class="container mt-2"> <!-- using Bootstrap's "container" class over "container-fluid" -->
+        <div class="row"> <!-- all 3 columns in 1 row -->
+
+            <!-- COLUMN 1: Navigation Sidebar -->
+            <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2">
+                <div class="list-group">
+
+                    <!-- Tuiter logo -->
+                    <div class="list-group-item override-bs-left">
+                        <a href="#" class="wd-blank-anchor">
+                            <i class="fab fa-twitter fa-2x"
+                               style="color: cornflowerblue;">
+                            </i>
+                        </a>
+                    </div>
+
+                    <!-- Home -->
+                    <div class="list-group-item override-bs-left">
+                        <a href="#" class="wd-blank-anchor">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fa fa-home"></i>
+                                </div>
+                                <div class="col-10 d-xl-inline-block d-none">
+                                    Home
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Explore -->
+                    <div class="list-group-item override-bs-left active">
+                        <a href="index.html" class="wd-blank-anchor">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fa fa-hashtag"></i>
+                                </div>
+                                <div class="col-10 d-xl-inline-block d-none">
+                                    Explore
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Notifications -->
+                    <div class="list-group-item override-bs-left">
+                        <a href="#" class="wd-blank-anchor">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fa fa-bell"></i>
+                                </div>
+                                <div class="col-10 d-xl-inline-block d-none">
+                                    Notifications
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Messages -->
+                    <div class="list-group-item override-bs-left">
+                        <a href="#" class="wd-blank-anchor">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="col-10 d-xl-inline-block d-none">
+                                    Messages
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Bookmarks -->
+                    <div class="list-group-item override-bs-left">
+                        <a href="#" class="wd-blank-anchor">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                                <div class="col-10 d-xl-inline-block d-none">
+                                    Bookmarks
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Top Articles -->
+                    <div class="list-group-item override-bs-left">
+                        <a href="#" class="wd-blank-anchor">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fa fa-fire"></i>
+                                </div>
+                                <div class="col-10 d-xl-inline-block d-none">
+                                    Top Articles
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Profile -->
+                    <div class="list-group-item override-bs-left">
+                        <a href="#" class="wd-blank-anchor">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <div class="col-10 d-xl-inline-block d-none">
+                                    Profile
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- More -->
+                    <div class="list-group-item override-bs-left wd-left-sidebar-more-height">
+                        <a href="#" class="wd-blank-anchor">
+                            <div class="row">
+                                <div class="col-2">
+                                    <span class="fa-stack wd-left-sidebar-more-icon-shift-leftwards-challenge">
+                                        <i class="fa fa-lg fa-circle fa-stack-1x"></i>
+                                        <i class="fa fa-xs fa-ellipsis-h fa-stack-1x" style="color: white;"></i>
+                                </span>
+                                </div>
+                                <div class="col-10 d-xl-inline-block d-none">
+                                    <span class="d-xl-inline-block d-none">
+                                        More
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <button id="tuit-button" type="button" class="btn btn-primary rounded-pill mt-2 w-100">
+                    Tuit
+                </button>
+
+            </div>
+
+            <!-- COLUMN 2: Main Content -->
+            <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10">
+
+                <!-- COLUMN 2, ROW 1: Search bar -->
+                <div class="row">
+                    <!-- magnifying glass and actual search bar -->
+                    <div class="col-11">
+                        <div class="position-relative">
+                            <div class="wd-search-magnifying-glass">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <input id="search-tuiter" class="rounded-pill ps-5 form-control"
+                                   type="text" placeholder="Search Tuiter"
+                            />
+                        </div>
+                    </div>
+                    <!-- settings gear -->
+                    <div class="col-1">
+                        <div class="position-relative">
+                            <div class="wd-search-settings-gear text-primary">
+                                <a href="explore-settings.html">
+                                    <i class="fa fa-cog fa-2x" style="color: black;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- COLUMN 2, ROW 2: Five tabs -->
+                <div class="nav nav-tabs mt-2 justify-content-center">
+                    <!-- For you -->
+                    <div class="nav-item flex-fill d-flex justify-content-center">
+                        <a class="nav-link active" href="for-you.html">For you</a>
+                    </div>
+
+                    <!-- Trending -->
+                    <div class="nav-item flex-fill d-flex justify-content-center">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </div>
+
+                    <!-- News -->
+                    <div class="nav-item flex-fill d-flex justify-content-center">
+                        <a class="nav-link" href="news.html">News</a>
+                    </div>
+
+                    <!-- Sports -->
+                    <div class="nav-item flex-fill d-flex justify-content-center">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </div>
+
+                    <!-- Entertainment -->
+                    <div class="nav-item flex-fill justify-content-center d-md-block d-none">
+                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    </div>
+
+                </div>
+
+                <!-- COLUMN 2, ROW 3: Main content -->
+
+                <!-- main image -->
+                <div class="position-relative mt-2">
+                    <a href="#">
+                        <img alt="SpaceX Starship"
+                             width="100%"
+                             src="https://grand-slam.s3.us-east-1.amazonaws.com/trips/laterthunb.jpg"
+                        />
+                        <h4 class="position-absolute wd-main-content-image-minor-caption">
+                            Tennis Tournament • LIVE
+                        </h4>
+                        <h2 class="position-absolute wd-main-content-image-caption">
+                            Australian Open 2023
+                        </h2>
+                    </a>
+                </div>
+
+                <!-- main stories -->
+                <div class="list-group">
+
+                    <!-- "Seizures" item -->
+                    <div class="list-group-item override-bs-center">
+                        <div class="row">
+                            <div class="col-11"> <!-- text -->
+                                <div class="wd-main-content-subtext">
+                                    Politics • Trending
+                                </div>
+                                <div class="fw-bolder">
+                                    <a href="#" class="wd-blank-anchor">
+                                        Seizures
+                                    </a>
+                                </div>
+                                <div class="wd-main-content-subtext">
+                                    4,953 Tuits
+                                </div>
+                            </div>
+                            <div class="col-1 mt-2"> <!-- 3 dots -->
+                                <a href="#">
+                                    <i class="fa fa-ellipsis-h" style="color: gray"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- "#InfinityPool" item -->
+                    <div class="list-group-item override-bs-center">
+                        <div class="row">
+                            <div class="fw-bolder">
+                                <a href="#" class="wd-blank-anchor">
+                                    #InfinityPool
+                                </a>
+                            </div>
+                            <div class="text-muted">
+                                See the electrifying thriller Infinity Pool in theaters — if
+                                you dare
+                            </div>
+                            <div class="wd-main-content-subtext">
+                                <i class="fa fa-external-link-square-alt"></i>
+                                Promoted by NEON
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- "RIP Bean" item -->
+                    <div class="list-group-item override-bs-center">
+                        <div class="row">
+                            <div class="col-11"> <!-- text -->
+                                <div class="wd-main-content-subtext">
+                                    Sports • Trending
+                                </div>
+                                <div class="fw-bolder">
+                                    <a href="#" class="wd-blank-anchor">
+                                        RIP Bean
+                                    </a>
+                                </div>
+                                <div class="wd-main-content-subtext">
+                                    18k Tuits
+                                </div>
+                            </div>
+                            <div class="col-1 mt-2"> <!-- 3 dots -->
+                                <a href="#">
+                                    <i class="fa fa-ellipsis-h" style="color: gray"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- "Durham" item -->
+                    <div class="list-group-item override-bs-center">
+                        <div class="row">
+                            <div class="col-11"> <!-- text -->
+                                <div class="wd-main-content-subtext">
+                                    Politics • Trending
+                                </div>
+                                <div class="fw-bolder">
+                                    <a href="#" class="wd-blank-anchor">
+                                        Durham
+                                    </a>
+                                </div>
+                                <div class="wd-main-content-subtext">
+                                    Trending with <a href="#" class="wd-blue-anchor">Barr</a>,
+                                    <a href="#" class="wd-blue-anchor">Barr</a>
+                                </div>
+                            </div>
+                            <div class="col-1 mt-2"> <!-- 3 dots -->
+                                <a href="#">
+                                    <i class="fa fa-ellipsis-h" style="color: gray"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- "#DirectedEvolution" item -->
+                    <div class="list-group-item">
+                        <div class="row">
+                            <div class="col-11"> <!-- text -->
+                                <div class="wd-main-content-subtext">
+                                    Trending in Business and finance
+                                </div>
+                                <div class="fw-bolder">
+                                    <a href="#" class="wd-blank-anchor">
+                                        #DirectedEvolution
+                                    </a>
+                                </div>
+                                <div class="wd-main-content-subtext">
+                                    172k Tuits
+                                </div>
+                            </div>
+                            <div class="col-1 mt-2"> <!-- 3 dots -->
+                                <a href="#">
+                                    <i class="fa fa-ellipsis-h" style="color: gray"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- COLUMN 3: "Who to Follow" Sidebar -->
+            <div class="col-xxl-4 col-xl-4 col-lg-4 d-lg-block d-md-none d-none">
+                <div class="list-group">
+                    <!-- Who to follow -->
+                    <div class="list-group-item override-bs-right">
+                        <div class="fw-bolder">
+                            Who to follow
+                        </div>
+                    </div>
+
+                    <!-- Java -->
+                    <div class="list-group-item override-bs-right">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="rounded-circle" alt="Java-icon"
+                                     height="50px" width="50px"
+                                     src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png"/>
+                            </div>
+                            <div class="col-8">
+                                <a href="#" class="wd-blank-anchor">
+                                    <div class="fw-bolder">
+                                        Java <i class="fa fa-check-circle text-primary"></i>
+                                    </div>
+                                    <div class="text-muted">
+                                        @Java
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <button id="follow-Java" type="button"
+                                        class="btn btn-dark rounded-pill float-end mt-1">
+                                    <div class="fw-bolder">
+                                        Follow
+                                    </div>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Relativity Space -->
+                    <div class="list-group-item override-bs-right">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="rounded-circle" alt="Java-icon"
+                                     height="50px" width="50px"
+                                     src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"/>
+                            </div>
+                            <div class="col-8">
+                                <a href="#" class="wd-blank-anchor">
+                                    <div class="fw-bolder">
+                                        Relativity Space <i class="fa fa-check-circle text-primary"></i>
+                                    </div>
+                                    <div class="text-muted">
+                                        @relativityspace
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <button id="follow-RelativitySpace" type="button"
+                                        class="btn btn-dark rounded-pill float-end mt-1">
+                                    <div class="fw-bolder">
+                                        Follow
+                                    </div>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Virgin Galactic -->
+                    <div class="list-group-item override-bs-right">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="rounded-circle" alt="Java-icon"
+                                     height="50px" width="50px"
+                                     src="https://cdn.worldvectorlogo.com/logos/virgin-1.svg"/>
+                            </div>
+                            <div class="col-8">
+                                <a href="#" class="wd-blank-anchor">
+                                    <div class="fw-bolder">
+                                        Virgin Galactic <i class="fa fa-check-circle text-primary"></i>
+                                    </div>
+                                    <div class="text-muted">
+                                        @virgingalactic
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <button id="follow-VirginGalactic" type="button"
+                                        class="btn btn-dark rounded-pill float-end mt-1">
+                                    <div class="fw-bolder">
+                                        Follow
+                                    </div>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- NASA -->
+                    <div class="list-group-item override-bs-right">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="rounded-circle" alt="Java-icon"
+                                     height="50px" width="55px"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"/>
+                            </div>
+                            <div class="col-8">
+                                <a href="#" class="wd-blank-anchor">
+                                    <div class="fw-bolder">
+                                        NASA <i class="fa fa-check-circle text-primary"></i>
+                                    </div>
+                                    <div class="text-muted">
+                                        @NASA
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <button id="follow-NASA" type="button"
+                                        class="btn btn-dark rounded-pill float-end mt-1">
+                                    <div class="fw-bolder">
+                                        Follow
+                                    </div>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Tesla -->
+                    <div class="list-group-item override-bs-right">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="rounded-circle" alt="Java-icon"
+                                     height="50px" width="50px"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png"/>
+                            </div>
+                            <div class="col-8">
+                                <a href="#" class="wd-blank-anchor">
+                                    <div class="fw-bolder">
+                                        Tesla <i class="fa fa-check-circle text-primary"></i>
+                                    </div>
+                                    <div class="text-muted">
+                                        @Tesla
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <button id="follow-Tesla" type="button"
+                                        class="btn btn-dark rounded-pill float-end mt-1">
+                                    <div class="fw-bolder">
+                                        Follow
+                                    </div>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Show more -->
+                    <div class="list-group-item override-bs-right">
+                        <div class="mt-1 mb-1">
+                            <a href="#" class="wd-blue-anchor">
+                                Show more
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Terms of Service -->
+                <div class="wd-main-content-subtext ms-2 mt-2">
+                    <a href="#" class="wd-blank-anchor">Terms of Service</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="wd-blank-anchor">Privacy Policy</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="wd-blank-anchor">Cookie Policy</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="wd-blank-anchor">Accessibility</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="wd-blank-anchor">Ads info</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="wd-blank-anchor">
+                        More&nbsp;<i class="fa fa-ellipsis-h" style="font-size: 10px;"></i>
+                    </a>
+                </div>
+
+                <!-- 2023 Twitter, Inc. -->
+                <div class="wd-main-content-subtext ms-2">
+                    <a href="#" class="wd-blank-anchor">
+                        &copy;2023 Twitter, Inc.
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
