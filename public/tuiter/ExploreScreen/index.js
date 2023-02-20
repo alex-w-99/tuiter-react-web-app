@@ -2,6 +2,8 @@ import NavigationSidebar from "../NavigationSidebar/index.js";
 import WhoToFollowList from "../WhoToFollowList/index.js";
 import ExploreComponent from "./ExploreComponent.js";
 
+// test
+
 /* eslint-env jquery */
 function explore() {
     $('#wd-explore').append(`
