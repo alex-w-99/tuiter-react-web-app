@@ -1,0 +1,17 @@
+/* FOR COLUMN 2: MAIN CONTENT */
+.wd-search-magnifying-glass { /* aligns magnifying glass with search bar */
+    position: absolute;
+    top: 6px;
+    left: 17px;
+}
+.wd-search-settings-gear { /* aligns settings gear next to search bar */
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 1.5em;
+}
+.wd-main-content-image-caption { /* formats caption text for main content's main image */
+    color: white;
+    bottom: 3px;
+    left: 7px;
+}
